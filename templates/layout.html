@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Deaths during the Los Angeles Riots</title>
+
+        <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.css" />
+        <script src="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js"></script>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/bootstrap.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/mystyles.css')}}">
+</head>
+<body>
+
+  <header class="woz">
+    <div class="container">
+      <h1 class="site-title"><a href="{{ url_for('index') }}">The Deaths of the Los Angeles Riots</a></h1>
+    </div>
+  </header>
+
+  <section class="sec content woz">
+    <div class="container">
+      {% block content %} {% endblock %}
+  </div>
+  </section>
+
+
+
+  <footer class="woz">
+    <div class="container">
+    <p>Data and structure comes from the <a href="http://first-news-app.readthedocs.io/en/latest/">First News App tutorial</a></p>
+    </div>
+
+  </footer>
+
+</body>
+</html>
